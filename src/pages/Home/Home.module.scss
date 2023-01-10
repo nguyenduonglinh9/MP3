@@ -1,0 +1,373 @@
+.container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+
+  .random-bar {
+    width: 20%;
+    height: 100%;
+    background-color: #111727;
+
+    .random-bar-header {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      margin-top: 10px;
+      align-items: center;
+      .random-bar-header-item {
+        width: 60%;
+        height: 60%;
+        background-color: #248687;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: absolute;
+        transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border: none;
+        outline: none;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .random-bar-header-item:nth-child(1) {
+        width: 60%;
+        height: 60%;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: absolute;
+        transform: translateX(-200%);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      .random-bar-header-item:nth-child(2) {
+        width: 60%;
+        height: 60%;
+        background-color: #248687;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: absolute;
+        transform: translateX(-100%);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      .random-bar-header-item:nth-child(3) {
+        width: 60%;
+        height: 60%;
+        background-color: #248687;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: absolute;
+        transform: scale(1.4);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        z-index: 3;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      .random-bar-header-item:nth-child(4) {
+        width: 60%;
+        height: 60%;
+        background-color: #248687;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: absolute;
+        transform: translateX(100%);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      .random-bar-header-item:nth-child(5) {
+        width: 60%;
+        height: 60%;
+        background-color: #248687;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: absolute;
+        transform: translateX(200%);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+    }
+    .list-random {
+      .item-random {
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        img {
+          margin: 5px;
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+        }
+        p {
+          margin: 5px;
+          pointer-events: none;
+        }
+        .item-random-info {
+          margin: 5px;
+
+          p:last-child {
+            opacity: 0.5;
+          }
+        }
+      }
+      .item-random:hover {
+        background-color: white;
+        color: #111727;
+      }
+    }
+  }
+  .content {
+    width: 80%;
+    height: 100%;
+    background-color: #248687;
+    background-size: cover;
+    // background-image: url('https://cdn.smehost.net/2020sonymusiccouk-ukprod/wp-content/uploads/2021/11/Adele-800x800.jpg');
+
+    .bg2 {
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(35, 128, 136, 0),
+        rgba(0, 0, 0, 1)
+      );
+
+      .name-info {
+        margin: 0;
+        font-size: 30px;
+        color: white;
+      }
+      .info {
+        font-size: 20px;
+        opacity: 0.8;
+        color: white;
+      }
+      .btn-allsong {
+        align-items: center;
+        background-color: #248687;
+        border: 0;
+        border-radius: 100px;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 16px;
+        justify-content: center;
+        line-height: 20px;
+        max-width: 480px;
+        min-height: 40px;
+        min-width: 0px;
+        overflow: hidden;
+        padding: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        touch-action: manipulation;
+        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+          box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+          color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+      }
+
+      .btn-allsong:hover,
+      .btn-allsong:focus {
+        background-color: #144e4f;
+        color: #ffffff;
+      }
+
+      .btn-allsong:active {
+        background: #09223b;
+        color: rgb(255, 255, 255, 0.7);
+      }
+
+      .btn-allsong:disabled {
+        cursor: not-allowed;
+        background: rgba(0, 0, 0, 0.08);
+        color: rgba(0, 0, 0, 0.3);
+      }
+      .info-random-singer {
+        padding: 10px 50px;
+      }
+    }
+    .pupolar-songs {
+      color: white;
+      margin-top: 50px;
+      .pupolar-songs-list {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        height: 200px;
+        align-items: flex-start;
+        .pupolar-songs-item {
+          margin: 10px 10px;
+          position: absolute;
+          width: 100px;
+          transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+          border-radius: 5px;
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+            object-fit: cover;
+          }
+          .name {
+            font-size: 14px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+          .singer {
+            font-size: 10px;
+          }
+        }
+        .pupolar-songs-item:hover img {
+          transform: scale(1.1);
+        }
+        .pupolar-songs-item:nth-child(2) {
+          transform: translateX(calc(100% + 20px));
+        }
+        .pupolar-songs-item:nth-child(3) {
+          transform: translateX(calc(200% + 40px));
+        }
+        .pupolar-songs-item:nth-child(4) {
+          transform: translateX(calc(300% + 60px));
+        }
+        .pupolar-songs-item:nth-child(5) {
+          transform: translateX(calc(400% + 80px));
+        }
+        .pupolar-songs-item:nth-child(6) {
+          transform: translateX(calc(500% + 100px));
+        }
+        .pupolar-songs-item:nth-child(7) {
+          transform: translateX(calc(600% + 120px));
+        }
+        .pupolar-songs-item:nth-child(8) {
+          transform: translateX(calc(700% + 140px));
+        }
+        .pupolar-songs-item:nth-child(9) {
+          transform: translateX(calc(800% + 160px));
+        }
+        .pupolar-songs-item:nth-child(10) {
+          transform: translateX(calc(900% + 180px));
+        }
+        .pupolar-songs-item:nth-child(11) {
+          transform: translateX(calc(1000% + 200px));
+        }
+        .pupolar-songs-item:nth-child(12) {
+          transform: translateX(calc(1100% + 220px));
+        }
+        .pupolar-songs-item:nth-child(n + 13) {
+          transform: translateX(calc(1200% + 240px));
+        }
+      }
+    }
+  }
+  .pupolar-artists {
+    color: white;
+
+    .pupolar-artists-list {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      height: 200px;
+      align-items: flex-start;
+      .pupolar-artists-item {
+        margin: 0px 10px;
+        position: absolute;
+        width: 100px;
+        transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border-radius: 5px;
+        text-align: center;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+          object-fit: cover;
+        }
+        .name-artist {
+          font-size: 10px;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+      .pupolar-artists-item:hover img {
+        opacity: 0.6;
+      }
+      .pupolar-artists-item:nth-child(2) {
+        transform: translateX(calc(100% + 20px));
+      }
+      .pupolar-artists-item:nth-child(3) {
+        transform: translateX(calc(200% + 40px));
+      }
+      .pupolar-artists-item:nth-child(4) {
+        transform: translateX(calc(300% + 60px));
+      }
+      .pupolar-artists-item:nth-child(5) {
+        transform: translateX(calc(400% + 80px));
+      }
+      .pupolar-artists-item:nth-child(6) {
+        transform: translateX(calc(500% + 100px));
+      }
+      .pupolar-artists-item:nth-child(7) {
+        transform: translateX(calc(600% + 120px));
+      }
+      .pupolar-artists-item:nth-child(8) {
+        transform: translateX(calc(700% + 140px));
+      }
+      .pupolar-artists-item:nth-child(9) {
+        transform: translateX(calc(800% + 160px));
+      }
+      .pupolar-artists-item:nth-child(10) {
+        transform: translateX(calc(900% + 180px));
+      }
+      .pupolar-artists-item:nth-child(11) {
+        transform: translateX(calc(1000% + 200px));
+      }
+      .pupolar-artists-item:nth-child(12) {
+        transform: translateX(calc(1100% + 220px));
+      }
+      .pupolar-artists-item:nth-child(n + 13) {
+        transform: translateX(calc(1200% + 240px));
+      }
+    }
+  }
+}
+.playingsong {
+  background-color: white;
+  color: #111727 !important;
+}
